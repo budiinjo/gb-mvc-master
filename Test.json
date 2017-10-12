@@ -1,0 +1,49 @@
+/*
+
+{
+    "country":"Japan",
+    "streetAddress1":"add1",
+    "streetAddress2":"add2",
+    "zip":"zip"
+}
+
+*/
+
+/*
+[
+    {
+        "country":"country1",
+        "streetAddress1":"add11",
+        "streetAddress2":"add12",
+        "zip":"zip1"
+    }
+    ,
+    {
+        "country":"country2",
+        "streetAddress1":"add21",
+        "streetAddress2":"add22",
+        "zip":"zip2"
+    }
+]
+*/
+
+//cart details
+//{"items":[{"itemId":"itemId0","qty":"0"},{"itemId":"itemId1","qty":"1"}]}
+//itemid  null
+//{"items":[{"itemId":null,"qty":"0"},{"itemId":"itemId1","qty":"1"}]}
+//qty null
+//{"items":[{"itemId":"itemId0","qty":null},{"itemId":"itemId1","qty":"1"}]}
+//items null instance
+//{"items":[null,null]}
+
+//shopping details
+//[{"homeAddress":{"streetAddress1":"StAddr11","streetAddress2":"StAddr21","zip":"zip1","country":"country1"},"officeAddress":null},{"homeAddress":{"streetAddress1":"StAddr12","streetAddress2":"StAddr22","zip":"zip2","country":"country2"},"officeAddress":{"streetAddress1":"StAddr11","streetAddress2":"StAddr21","zip":"zip1","country":"country1"}}]
+//shopping details => office address null
+//{"homeAddress":{"streetAddress1":"StAddr1","streetAddress2":"StAddr2","streetAddress3":"StAddr3","zip":"zip","country":"country","city":"city"},"officeAddress":null}
+//shopping details => office address all null values
+//{"homeAddress":{"streetAddress1":"StAddr1","streetAddress2":"StAddr2","streetAddress3":"StAddr3","zip":"zip","country":"country","city":"city"},"officeAddress":{"streetAddress1":null,"streetAddress2":null,"streetAddress3":null,"zip":null,"country":null,"city":null}}
+
+//contact details
+{"email":"email","landline":"landline","handphone":"handphone"}
+//contact details => email null
+
